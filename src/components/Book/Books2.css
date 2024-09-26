@@ -1,0 +1,22 @@
+/* Books2.css */
+.container {
+  padding: 50px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.content {
+  margin-top: 50px;
+}
+

@@ -1,0 +1,35 @@
+/* Book_user.css */
+.book-card {
+  position: relative; /* Establish a positioning context for the pseudo-element */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 250px; /* Keep the width unchanged */
+  text-align: center;
+  min-height: 400px; /* Adjust as needed */
+  background-color: 	#FFFFE0		; /* Keep the background color of the card white  #E0FFFF*/
+  overflow: hidden; /* Ensure pseudo-element does not overflow */
+}
+
+/* Pseudo-element for dark border effect */
+.book-card::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust to control the thickness of the border */
+  left: -10px; /* Adjust to control the thickness of the border */
+  right: -10px; /* Adjust to control the thickness of the border */
+  bottom: -10px; /* Adjust to control the thickness of the border */
+  background-color: #DCDCDC; /* Dark color for the border */
+  z-index: -1; /* Place the pseudo-element behind the card content */
+  border-radius: 12px; /* Slightly larger than the card's border radius */
+}
+
+.book-image {
+  width: 100%; /* Keep the width at 100% of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Increase height as needed */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 8px;
+}
+

@@ -1,0 +1,92 @@
+/* Container for the list of books */
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Each book item */
+li {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  width: 250px; /* Adjust as needed */
+  max-width: 250px;
+  max-height: 400px;
+}
+
+/* Card styling */
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd; /* Optional border for visual separation */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* Background color of the card */
+}
+
+/* Image styling */
+.card > img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust to fit your design */
+  object-fit: cover; /* Ensures the image covers the area */
+  border-bottom: 1px solid #ddd; /* Optional bottom border for separation */
+}
+
+/* Styling for text in the card */
+.card article, .card h3, .card p {
+  margin: 5px 0; /* Margin for spacing */
+}
+
+.card h3 {
+  font-size: 1.2em; /* Adjust font size as needed */
+  text-align: center;
+}
+
+.card p {
+  font-size: 0.9em; /* Adjust font size as needed */
+  text-align: center;
+}
+
+/* Container for the pagination buttons */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Style for individual pagination buttons */
+.pagination-container button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the active button */
+.pagination-container button.active {
+  background-color: #0056b3; /* Darker blue for active button */
+}
+
+/* Optional: Add hover effect */
+.pagination-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+

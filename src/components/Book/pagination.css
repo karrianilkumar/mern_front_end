@@ -1,0 +1,39 @@
+/* Ensure the pagination container is at the bottom and centered */
+.pagination-container {
+  position: fixed;
+  bottom: 20px; /* Adjust this value to move the container up or down */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.pagination {
+  display: flex;
+  gap: 5px; /* Adjust gap between buttons */
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination .active {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: 1px solid #007bff; /* Match the background color */
+}
+
+.pagination button:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
